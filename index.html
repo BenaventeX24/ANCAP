@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Calculadora de consumo y precio de nafta"/>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>ViajeSeguro</title>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="Recursos/logo_ancap2.png" />
+    </div>
+    <form>
+      <div class="disenoCalculadora">
+        <h1>Calculadora de precio por consumo de nafta</h1>
+        <div class="opcion-nafta">
+          <h2>Tipo nafta:</h2>
+          <select id="select1">
+            <option value="1">Nafta Super 95E 30-S ($65,47)</option>
+            <option value="2">Nafta Premium 97E 30-S ($67,80)</option>
+            <option value="3">Gasoil 50-S ($45,29)</option>
+            <option value="4">Gasoil 10-S ($67,87)</option>
+          </select>
+        </div>
+        <div class="calcu">
+          <p>Ingrese el consumo por kilómetro de su vehículo (km/L)</p>
+          <input type="number" id="l/km" class="input" />
+          <p>Ingrese la cantidad de kilómetros que recorrerá</p>
+          <input type="number" id="km" class="input" />
+        </div>
+        <button type="button" id="enter" onclick="calculadora()"> Calcula </button>
+      </div>
+      <div class="resultado">
+        <h2>Usted necesitará:</h2>
+        <p id="naftaNecesaria">0 litros de nafta</p>
+        <h2>El costo de su viaje será de:</h2>
+        <p id="costoViaje">$0</p>
+      </div>
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
